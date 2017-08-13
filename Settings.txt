@@ -1,0 +1,4 @@
+- Arc Theme: https://github.com/horst3180/arc-theme
+- Folder icons: elementary Xfce darker
+- Xfce panel swtich: custom panel
+- Wallpaper: space minimalist
