@@ -52,4 +52,13 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\[\e[32m\]\u\[\e[m\]\[\e[32;40m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\] \\$ "
+export PS1="\[\e[32m\]\u\[\e[m\]\[\e[32;40m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\]\\$ "
+
+# alias for packages update
+alias pacup="sudo pacman -Syu"
+
+# alias for auto clean up packages
+alias pacrem="sudo pacman -R $(pacman -Qdtq)"
+
+# alias for optimize packages
+alias pacopt="sudo pacman-optimize"
