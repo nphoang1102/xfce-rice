@@ -2,3 +2,7 @@
 - Folder icons: elementary Xfce darker
 - Xfce panel swtich: custom panel
 - Wallpaper: space minimalist
+- Terminal: nord https://github.com/arcticicestudio/nord-xfce-terminal
+- Font: DejaVu Sans Mono for terminal/coding and DejaVu Serif Book for system font.
+- Conky settings: .conkyrc, goto setting -> Session and 
+startup to config autostart
