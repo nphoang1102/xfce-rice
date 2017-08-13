@@ -6,3 +6,4 @@
 - Font: DejaVu Sans Mono for terminal/coding and DejaVu Serif Book for system font.
 - Conky settings: .conkyrc, goto setting -> Session and 
 startup to config autostart
+- Custom bash config
