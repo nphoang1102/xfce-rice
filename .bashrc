@@ -66,4 +66,7 @@ alias pacopt="sudo pacman-optimize"
 alias monitor-reset="killall conky; conky"
 
 # alias for make and run a c-project folder
-alias crun="(make clean && make); ./main.bin"
+alias c-run="(make clean && make); ./main.bin"
+
+# for the memes
+alias fucking="sudo"
