@@ -53,14 +53,8 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\] \n\\$ "
-# alias for packages update
-alias pacup="sudo pacman -Syu"
-
-# alias for auto clean up packages
-alias pacrem="sudo pacman -R $(pacman -Qdtq)"
-
-# alias for optimize packages
-alias pacopt="sudo pacman-optimize"
+# alias for packages update, remove headless packages and optimize all current packages
+alias pacup="sudo pacman -Syu; sudo pacman -R $(pacman -Qdtq); sudo pacman-optimize"
 
 # alias for reset conky
-alias conky-reset="kill all conky & conky"
+alias conky-reset="killall conky; conky"
