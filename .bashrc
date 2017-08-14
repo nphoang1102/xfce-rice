@@ -56,5 +56,14 @@ export PS1="\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[33m
 # alias for packages update, remove headless packages and optimize all current packages
 alias pacup="sudo pacman -Syu; sudo pacman -R $(pacman -Qdtq); sudo pacman-optimize"
 
+# alias for removing headless packages
+alias pacrem="sudo pacman -R $(pacman -Qdtq)"
+
+# alias for optimizing packages
+alias pacopt="sudo pacman-optimize"
+
 # alias for reset conky
-alias conky-reset="killall conky; conky"
+alias monitor-reset="killall conky; conky"
+
+# alias for make and run a c-project folder
+alias crun="(make clean && make); ./main.bin"
