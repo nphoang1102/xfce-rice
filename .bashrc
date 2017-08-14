@@ -61,3 +61,6 @@ alias pacrem="sudo pacman -R $(pacman -Qdtq)"
 
 # alias for optimize packages
 alias pacopt="sudo pacman-optimize"
+
+# alias for reset conky
+alias conky-reset="kill all conky & conky"
