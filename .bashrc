@@ -52,15 +52,17 @@ function parse_git_dirty {
 	fi
 }
 
+
 export PS1="\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\] \n\\$ "
+
 # alias for packages update, remove headless packages and optimize all current packages
-alias pacup="sudo pacman -Syu; sudo pacman -R $(pacman -Qdtq); sudo pacman-optimize"
+alias aptup="sudo apt-get update; sudo apt-get upgrade; sudo apt-get autoremove"
 
 # alias for removing headless packages
-alias pacrem="sudo pacman -R $(pacman -Qdtq)"
+alias aptrem="sudo apt-get autoremove"
 
 # alias for optimizing packages
-alias pacopt="sudo pacman-optimize"
+# alias pacopt="sudo pacman-optimize"
 
 # alias for reset conky
 alias monitor-reset="killall conky; conky"
@@ -70,3 +72,9 @@ alias c-run="(make clean && make); ./main.bin"
 
 # for the memes
 alias fucking="sudo"
+
+# initialize source for ROS Kinetic everytime
+source /opt/ros/kinetic/setup.bash
+
+# initialize the catkin workspace
+source ~/catkin_ws/devel/setup.bash
