@@ -78,3 +78,7 @@ source /opt/ros/kinetic/setup.bash
 
 # initialize the catkin workspace
 source ~/catkin_ws/devel/setup.bash
+
+# mod dialout so we don't get permission denied trying to talk to the hand
+alias init-left="sudo chmod a+rw /dev/ttyUSB0"
+alias init-right="sudo chmod a+rw /dev/ttyUSB1"
