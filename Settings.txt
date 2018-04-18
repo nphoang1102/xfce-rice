@@ -7,4 +7,4 @@
 - Conky settings: .conkyrc, goto setting -> Session and 
 startup to config autostart
 - Custom bash config
-- Clock config for panel: <span font_desc="bold 12" fgcolor="White">%A, %B %d %Y - %l:%M %P</span>
+- Clock config for panel: <span font_desc="bold 12" fgcolor="White">%l:%M %P</span>
